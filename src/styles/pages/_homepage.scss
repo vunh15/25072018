@@ -1,0 +1,293 @@
+html {
+    overflow: hidden-scroll;
+}
+.hidden-scroll {
+    overflow: hidden;
+}
+.wrapper {
+    overflow: hidden;
+    position: relative;
+}
+.style-title {
+    font-weight: 900;
+}
+// style banner
+.banner-container {
+    height: 600px;
+    .content {
+        padding: 0;
+    }
+    .slider {
+        height: 600px;
+    }
+    .content_banner {
+        padding: 0;
+        .container {
+            position: relative;
+        }
+    }
+    .item {
+        position: absolute;
+        height: auto;
+        width: 53%;
+        left: 50%;
+        top: 50%;
+        z-index: 999;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        .btn_banner {
+            padding-left: 5px;
+        }
+    }
+    .slick-track {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transform: translate(-50%, -50%) !important;
+    }
+    .slick-list {
+        height: 100%;
+    }
+    .slick-dots {
+        bottom: 0;
+        .slick-active {
+            color: $color-white;
+        }
+        .slick-active button:before {
+            color: $color-white;
+        }
+    }
+    .slick-dots li button:before {
+        font-family: 'slick';
+        font-size: 10px;
+        line-height: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        content: '•';
+        opacity: .25;
+        color: $color-black;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+.content {
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    background-size: cover;
+    margin-bottom: 0 !important;
+    background-attachment: fixed;
+    .lato {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        color: $color-white;
+        .title-banner {
+            font-size: 46px;
+            color: $color-white;
+            text-align: center;
+        }
+    }
+    .w3-animate-left {
+        text-align: center;
+        font-size: 36px;
+        color: $color-white;
+    }
+    .image {
+        color: $color-white;
+        float:left;
+        .demo3 {
+            float: right;
+            margin-left: 10px;
+        }
+    }
+    .btn {
+        margin: 20px 10px;
+        padding: 10px 15px;
+        background-color: rgba(10, 19, 29, 0);
+        border: 2px solid $color-white;
+        color: $color-white;
+        text-align: center;
+    }
+    .btn:hover {
+        border: 2px solid $color-white;
+        background-color: $color-white;
+        color: $color-hover;
+    }
+}
+
+//style development 
+
+.development {
+    padding: 50px 0;
+    .title-dev {
+        font-size: 60px;
+        padding: 0 40px 40px;
+        font-weight: bold;
+    }
+    .text-dev {
+        padding: 0 40px 40px;
+    }
+    .img-dev {
+        padding: 10px 40px 10px 70px;
+    }
+}
+.branding {
+    @extend .development;
+    background-color: $color-bg;
+}
+.clients {
+    padding: 50px 0;
+    .icon {
+        height: 100px;
+    }
+    .ico-cli {
+        padding: 0 15px;
+    }
+    .bd-icon {
+        width: 70px;
+        height: 70px;
+        float: left;
+        border: 1px solid $color-black;
+        border-radius: 50%;
+        background: $color-black;
+        margin-right: 20px;
+        position: relative;
+        color: $color-white;
+        .icon1 {
+            font-size: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &:hover {
+            background: $color-hover;
+            color: $color-black;
+            border: 1px solid $color-hover;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+    .title-skill {
+        font-weight: bold;
+    }
+    .tit-skill {
+        color: $color-black;
+    }
+}
+.team {
+    padding: 50px 0 0;
+    text-align: center;
+    background: $color-bg;
+    .content-team {
+        margin-bottom: 60px;
+    }
+    .content-1 {
+        background: $color-white;
+        padding: 50px 0;
+    }
+    .txt-team {
+        padding-bottom: 50px;
+    }
+    .title-team {
+        font-size: 60px;
+    }
+    .text-team {
+        border: 1px solid $color-xam;
+        background: $color-white;
+        text-align: left;
+        margin: 30px;
+    }
+    .text {
+        margin: 40px 90px;
+    }
+}
+.amazing {
+    padding: 50px 0;
+    text-align: center;
+    background: $color-black;
+    color: $color-white;
+    .txt-amazing {
+        padding-bottom: 50px;
+    }
+    .title-amazing {
+        font-size: 60px;
+    }
+    .image-amazing {
+        max-width: 100%;
+        padding-bottom: 20px;
+    }
+    .content-amazing {
+        margin-bottom: 45px;
+    }
+    .icon {
+       padding-left: 120px;
+    }
+    .ico {
+        width: 45px;
+        height: 45px;
+        border: 1px solid $color-white;
+        float: left;
+        text-align: center;
+        position: relative;
+        margin-right: 5px;
+        border-radius: 50%;
+        cursor: pointer;
+        .icon-1 {
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $color-white;
+        }
+        &:hover {
+            border: 1px solid $color-hover;
+            .icon-1 {
+                color: $color-hover;
+            }
+        }
+    }
+}
+.contact {
+    background: $bg-contact;
+    padding: 50px 0;
+    color: $color-white;
+    .title-ct {
+        font-size: 60px;
+        padding-bottom: 15px;
+    }
+    .txt-title {
+        font-size: 16px;
+        font-style: italic;
+        padding-bottom: 50px;
+    }
+    .ico {
+        padding-bottom: 40px;
+    }
+    .icon {
+        float: left;
+        padding-right: 15px;
+        font-size: 30px;
+    }
+    .form-group {
+        color: $color-black;
+        .form-inp {
+            width: 100%;
+            margin-bottom: 30px;
+            height: 50px;
+            padding-left: 20px;
+        }
+        .form-area {
+            width: 100%;
+            padding: 20px;
+        }
+    }
+}
