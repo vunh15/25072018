@@ -1,8 +1,16 @@
+@include breakpoint(2560) {
+    .banner-container {
+        height: 800px;
+    }
+}
 @include breakpoint(1024) {
     .banner-container {
         height: 500px;
         .slider {
             height: 500px;
+        }
+        .btn {
+            padding: 15px 30px;
         }
     }
     .content {
@@ -90,13 +98,16 @@
         padding: 0;
     }
     .img-brand {
-        padding: 85px 0 0;
+        padding: 45px 0 0;
     }
     .txt-clients {
         font-size: 12px;
     }
     .clients {
         padding: 0;
+        .txt-skill {
+            width: 72%;
+        }
     }
     .team {
         padding: 50px 0 0;
@@ -107,7 +118,10 @@
             margin: 5px 0;
         }
         .lg {
-            padding: 10px 0;
+            padding: 20px 0 10px;
+        }
+        .txt-lg {
+            margin-bottom: 10px;
         }
     }
     .amazing {
@@ -174,6 +188,20 @@
 }
 
 @include breakpoint(480) {
+    .banner-container {
+        .lato {
+            font-size: 20px;
+            padding-bottom: 30px;
+        }
+        .w3-animate-left {
+            font-size: 18px;
+            padding-bottom: 30px;
+        }
+        .btn {
+            font-size: 12px;
+            padding: 15px 20px;
+        }
+    }
     .content-dev {
         width: 100%;
     }
@@ -256,7 +284,7 @@
     }
     .amazing {
         .icon {
-            padding-left: 140px;
+            padding-left: 130px;
         }
     }
     footer {
@@ -303,7 +331,11 @@
             width: 100%;
         }
         .text-team {
-            margin: 0 0 15px;
+            margin: 5px 0;
+        }
+        .text {
+            margin: 0;
+            padding: 0;
         }
         .txt-team {
             padding-bottom: 0;
@@ -326,6 +358,9 @@
     }
     .clients {
         padding: 20px;
+        .txt-skill {
+            width: 67%;
+        }
     }
     .contact {
         padding: 25px 0;
@@ -342,7 +377,7 @@
                 margin-bottom: 10px;
             }
             .form-area {
-                padding: 10px;
+                padding: 0 0 10px 20px;
             }
         }
     }

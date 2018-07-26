@@ -9,116 +9,65 @@ html {
     position: relative;
 }
 .style-title {
-    font-weight: 900;
+    font-family: 'Brandon Bold';
 }
 // style banner
 .banner-container {
     height: 600px;
+    position: relative;
     .content {
-        padding: 0;
-    }
-    .slider {
-        height: 600px;
-    }
-    .content_banner {
-        padding: 0;
-        .container {
-            position: relative;
-        }
-    }
-    .item {
-        position: absolute;
-        height: auto;
-        width: 53%;
-        left: 50%;
-        top: 50%;
-        z-index: 999;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        .btn_banner {
-            padding-left: 5px;
-        }
-    }
-    .slick-track {
-        position: relative;
-        top: 50%;
-        left: 50%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        transform: translate(-50%, -50%) !important;
-    }
-    .slick-list {
-        height: 100%;
-    }
-    .slick-dots {
-        bottom: 0;
-        .slick-active {
-            color: $color-white;
-        }
-        .slick-active button:before {
-            color: $color-white;
-        }
-    }
-    .slick-dots li button:before {
-        font-family: 'slick';
-        font-size: 10px;
-        line-height: 0px;
         position: absolute;
         top: 0;
         left: 0;
-        width: 20px;
-        height: 20px;
-        content: '•';
-        opacity: .25;
-        color: $color-black;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
+        right: 0;
+        bottom: 0;
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
     }
-}
-.content {
-    height: 600px;
-    background-repeat: no-repeat;
-    background-position: 50% 40%;
-    background-size: cover;
-    margin-bottom: 0 !important;
-    background-attachment: fixed;
-    .lato {
-        font-size: 20px;
+    .content_banner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
         text-align: center;
-        margin-bottom: 20px;
-        color: $color-white;
-        .title-banner {
-            font-size: 46px;
-            color: $color-white;
-            text-align: center;
-        }
-    }
-    .w3-animate-left {
-        text-align: center;
-        font-size: 36px;
-        color: $color-white;
-    }
-    .image {
-        color: $color-white;
-        float:left;
-        .demo3 {
-            float: right;
-            margin-left: 10px;
-        }
+        transform: translate(-50%, -50%);
+        z-index: 2;
     }
     .btn {
-        margin: 20px 10px;
-        padding: 10px 15px;
+        padding: 20px 65px;
         background-color: rgba(10, 19, 29, 0);
         border: 2px solid $color-white;
         color: $color-white;
         text-align: center;
+        font-family: 'Brandon Bold';
+        font-size: 23px;
     }
     .btn:hover {
         border: 2px solid $color-white;
         background-color: $color-white;
         color: $color-hover;
+    }
+    .lato {
+        font-family: 'Brandon Light';
+        font-size: 32px;
+        color: $color-white;
+        padding-bottom: 50px;
+    }
+    .w3-animate-left {
+        font-family: 'Brandon Bold';
+        color: $color-white;
+        font-size: 66px;
+        padding-bottom: 80px;
+    }
+    &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+        background: rgba(0,0,0,.35);
+        z-index: 1;
     }
 }
 
@@ -129,10 +78,13 @@ html {
     .title-dev {
         font-size: 60px;
         padding: 0 40px 40px;
-        font-weight: bold;
+        font-family: 'Brandon Light';
     }
     .text-dev {
         padding: 0 40px 40px;
+        font-family: 'Brandon Light';
+        line-height: 1.4;
+        color: #777777;
     }
     .img-dev {
         padding: 10px 40px 10px 70px;
@@ -176,10 +128,21 @@ html {
         }
     }
     .title-skill {
-        font-weight: bold;
+        font-family: 'Brandon Bold';
+        font-size: 22px;
+        padding-bottom: 10px;
     }
     .tit-skill {
         color: $color-black;
+    }
+    .txt-clients {
+        font-family: 'Brandon Light';
+        font-size: 16px;
+        color: #777777;
+    }
+    .txt-skill {
+        width: 80%;
+        float: right;
     }
 }
 .team {
@@ -198,6 +161,7 @@ html {
     }
     .title-team {
         font-size: 60px;
+        font-family: 'Brandon Light';
     }
     .text-team {
         border: 1px solid $color-xam;
@@ -206,7 +170,27 @@ html {
         margin: 30px;
     }
     .text {
-        margin: 40px 90px;
+        margin: 40px 0;
+        font-family: 'Brandon Light';
+        font-size: 20px;
+        line-height: 1.4;
+        text-align: center;
+        padding: 0 70px;
+    }
+    .title-txt {
+        font-family: 'Brandon Light';
+        font-size: 22px;
+        color: #777777;
+    }
+    .text-1 {
+        padding-bottom: 15px;
+    }
+    .lg {
+        text-align: center;
+    }
+    .txt-lg {
+        display: inline-block;
+        padding: 0 22px;
     }
 }
 .amazing {
@@ -219,6 +203,7 @@ html {
     }
     .title-amazing {
         font-size: 60px;
+        font-family: 'Brandon Light';
     }
     .image-amazing {
         max-width: 100%;
@@ -226,6 +211,21 @@ html {
     }
     .content-amazing {
         margin-bottom: 45px;
+    }
+    .txt-title {
+        font-family: 'Brandon Light';
+        font-size: 22px;
+        color: #777777;
+    }
+    .title-content-amazing {
+        font-family: 'Brandon Bold';
+        font-size: 18px;
+        padding-bottom: 5px;
+    }
+    .txt-content-amazing {
+        font-family: 'Brandon Light';
+        font-size: 16px;
+        padding-bottom: 10px;
     }
     .icon {
        padding-left: 120px;
@@ -237,9 +237,9 @@ html {
         float: left;
         text-align: center;
         position: relative;
-        margin-right: 5px;
         border-radius: 50%;
         cursor: pointer;
+        margin: 0 5px;
         .icon-1 {
             font-size: 20px;
             position: absolute;
@@ -255,6 +255,10 @@ html {
             }
         }
     }
+    .txt {
+        font-family: 'Brandon Light';
+        font-size: 20px;
+    }
 }
 .contact {
     background: $bg-contact;
@@ -263,14 +267,17 @@ html {
     .title-ct {
         font-size: 60px;
         padding-bottom: 15px;
+        font-family: 'Brandon Light';
     }
     .txt-title {
         font-size: 16px;
-        font-style: italic;
+        font-family: 'Brandon Light';
         padding-bottom: 50px;
     }
     .ico {
         padding-bottom: 40px;
+        font-family: 'Brandon Light';
+        font-size: 18px;
     }
     .icon {
         float: left;
@@ -279,15 +286,19 @@ html {
     }
     .form-group {
         color: $color-black;
+        font-family: 'Brandon Light';
+        font-size: 18px;
         .form-inp {
             width: 100%;
             margin-bottom: 30px;
             height: 50px;
             padding-left: 20px;
+            border-radius: 5px;
         }
         .form-area {
             width: 100%;
             padding: 20px;
+            border-radius: 5px;
         }
     }
 }
