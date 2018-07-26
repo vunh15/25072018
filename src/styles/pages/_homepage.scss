@@ -128,7 +128,7 @@ html {
         }
     }
     .title-skill {
-        font-family: 'Brandon Bold';
+        font-family: 'Brandon Medium';
         font-size: 22px;
         padding-bottom: 10px;
     }
@@ -286,8 +286,9 @@ html {
     }
     .form-group {
         color: $color-black;
-        font-family: 'Brandon Light';
+        font-family: 'Brandon Medium';
         font-size: 18px;
+        color: #bbbbbb;
         .form-inp {
             width: 100%;
             margin-bottom: 30px;
