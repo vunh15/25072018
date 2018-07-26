@@ -1,0 +1,384 @@
+@include breakpoint(2560) {
+    .banner-container {
+        height: 800px;
+    }
+}
+@include breakpoint(1024) {
+    .banner-container {
+        height: 500px;
+        .slider {
+            height: 500px;
+        }
+        .btn {
+            padding: 15px 30px;
+        }
+    }
+    .content {
+        height: 500px;
+    }
+    .team {
+        padding: 50px 0;
+        .text-team {
+            margin: 40px 0;
+        }
+    }
+    .amazing {
+        padding: 50px 0;
+        .icon {
+            padding-left: 85px;
+        }
+    }
+    .development {
+        padding: 50px 0;
+    }
+    .clients {
+        padding: 50px 0;
+    }
+    .contact {
+        padding: 50px 0;
+    }
+}
+
+@include breakpoint(768) {
+    .slick-prev {
+        left: 0;
+    }
+    .slick-next {
+        right: 0;
+    }
+    .header {
+        background-color: $color-black;
+        position: fixed;
+        .navbar-toggle {
+            display: table;
+        }
+        .item-content-menu {
+            width: 100%;
+            .nav-list {
+                position: absolute;
+                width: 100%;
+                background: $color-black;
+                top: 60px;
+                left: -27%;
+                opacity: 0;
+                visibility: hidden;
+                transform: translateX(100%);
+                transition: all .5s ease;
+                &.animate-menu {
+                    visibility: visible;
+                    transform: translateX(0);
+                    transition: all .5s ease;
+                    opacity: 1;
+                    width: 129%;
+                }
+                .item-nav {
+                    display: block;
+                    text-align: center;
+                    .title-nav {
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+        .logo {
+            z-index: 1;
+            width: 20%;
+            padding-top: 15px;
+        }
+    }
+    .development {
+        .img-dev {
+            padding: 85px 0 0;
+        }
+        .title-dev {
+            font-size: 40px;
+        }
+    }
+    .branding {
+        padding: 0;
+    }
+    .img-brand {
+        padding: 45px 0 0;
+    }
+    .txt-clients {
+        font-size: 12px;
+    }
+    .clients {
+        padding: 0;
+        .txt-skill {
+            width: 72%;
+        }
+    }
+    .team {
+        padding: 50px 0 0;
+        .title-team {
+            font-size: 40px;
+        }
+        .text-team {
+            margin: 5px 0;
+        }
+        .lg {
+            padding: 20px 0 10px;
+        }
+        .txt-lg {
+            margin-bottom: 10px;
+        }
+    }
+    .amazing {
+        .title-amazing {
+            font-size: 40px;
+        }
+        .txt-title {
+            font-size: 12px;
+        }
+        .icon {
+            padding-left: 52px;
+        }
+        .txt {
+            font-size: 12px;
+        }
+        .title-content-amazing {
+            font-size: 12px;
+        }
+        .txt-content-amazing {
+            font-size: 11px;
+        }
+    }
+    .contact {
+        .title-ct {
+            font-size: 40px;
+        }
+        .txt-title {
+            font-size: 12px;
+        }
+        .ico {
+            font-size: 11px;
+        }
+    }
+}
+
+@include breakpoint(767) {
+    .content-dev {
+        width: 66.66666667%;
+    }
+    .img-dev {
+        width: 33.33333333%;
+    }
+    .img-brand {
+        width: 33.33333333%;
+    }
+    .content-brand {
+        width: 66.66666667%;
+    }
+    .skill {
+        width: 50%;
+    }
+    .img-team {
+        width: 33.33333333%;
+    }
+    .text-team {
+        width: 66.66666667%;
+    }
+    .content-ama {
+        width: 33.33333333%;
+    }
+    .say {
+        width: 50%;
+    }
+}
+
+@include breakpoint(480) {
+    .banner-container {
+        .lato {
+            font-size: 20px;
+            padding-bottom: 30px;
+        }
+        .w3-animate-left {
+            font-size: 18px;
+            padding-bottom: 30px;
+        }
+        .btn {
+            font-size: 12px;
+            padding: 15px 20px;
+        }
+    }
+    .content-dev {
+        width: 100%;
+    }
+    .img-dev {
+        width: 100%;
+    }
+    .development {
+        .img-dev {
+            padding: 0 100px;
+        }
+    }
+    .img-brand {
+        width: 100%;
+        padding: 20px 100px;
+    }
+    .content-brand {
+        width: 100%;
+    }
+    .skill {
+        width: 100%;
+        padding: 15px 0;
+    }
+    .img-team {
+        width: 100%;
+    }
+    .text-team {
+        width: 100%;
+    }
+    .content-ama {
+        width: 100%;
+    }
+    .say {
+        width: 100%;
+    }
+}
+
+@include breakpoint(425) {
+    .banner-container {
+        height: 400px;
+        .slider {
+            height: 400px;
+        }
+    }
+    .content {
+        height: 400px;
+        .w3-animate-left {
+            font-size: 20px;
+        }
+        .btn {
+            font-size: 12px;
+        }
+    }
+    .development {
+        .text-dev {
+            padding: 0;
+        }
+        .img-dev {
+            padding: 10px 40px 10px 70px;
+        }
+        .title-dev {
+            font-size: 30px;
+        }
+    }
+    .img-brand {
+        padding: 10px 40px 10px 70px;
+    }
+    .clients {
+        padding: 15px;
+    }
+    .team {
+        .text {
+            margin: 15px;
+        }
+        .text-team {
+            margin: 15px;
+        }
+        .content-1 {
+            padding: 20px 0;
+        }
+    }
+    .amazing {
+        .icon {
+            padding-left: 130px;
+        }
+    }
+    footer {
+        .txt-footer {
+            font-size: 12px;
+        }
+    }
+}
+
+@include breakpoint(375) {
+    .amazing {
+        .icon {
+            padding-left: 120px;
+        }
+    }
+}
+
+@include breakpoint(320) {
+    .development {
+        padding: 25px 0;
+        .title-dev {
+            padding: 0;
+        }
+        .text-dev {
+            padding: 0;
+            font-size: 14px;
+        }
+        .img-dev {
+            padding: 40px;
+        }
+    }
+    .img-brand {
+        padding: 20px;
+    }
+    .team {
+        padding: 25px 0;
+        .title-team {
+            font-size: 30px;
+        }
+        .title-txt {
+            font-size: 12px;
+        }
+        .lg {
+            width: 100%;
+        }
+        .text-team {
+            margin: 5px 0;
+        }
+        .text {
+            margin: 0;
+            padding: 0;
+        }
+        .txt-team {
+            padding-bottom: 0;
+        }
+        .content-team {
+            margin-bottom: 0;
+        }
+        .img-team {
+            padding: 20px 15px;
+        }
+    }
+    .amazing {
+        padding: 25px 0;
+        .title-amazing {
+            font-size: 30px;
+        }
+        .icon {
+            padding-left: 90px;
+        }
+    }
+    .clients {
+        padding: 20px;
+        .txt-skill {
+            width: 67%;
+        }
+    }
+    .contact {
+        padding: 25px 0;
+        .title-ct {
+            font-size: 30px;
+        }
+        .icon {
+            padding-right: 5px;
+            font-size: 17px;
+        }
+        .form-group {
+            .form-inp {
+                height: 25px;
+                margin-bottom: 10px;
+            }
+            .form-area {
+                padding: 0 0 10px 20px;
+            }
+        }
+    }
+}

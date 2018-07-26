@@ -1,0 +1,305 @@
+html {
+    overflow: hidden-scroll;
+}
+.hidden-scroll {
+    overflow: hidden;
+}
+.wrapper {
+    overflow: hidden;
+    position: relative;
+}
+.style-title {
+    font-family: 'Brandon Bold';
+}
+// style banner
+.banner-container {
+    height: 600px;
+    position: relative;
+    .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .content_banner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    .btn {
+        padding: 20px 65px;
+        background-color: rgba(10, 19, 29, 0);
+        border: 2px solid $color-white;
+        color: $color-white;
+        text-align: center;
+        font-family: 'Brandon Bold';
+        font-size: 23px;
+    }
+    .btn:hover {
+        border: 2px solid $color-white;
+        background-color: $color-white;
+        color: $color-hover;
+    }
+    .lato {
+        font-family: 'Brandon Light';
+        font-size: 32px;
+        color: $color-white;
+        padding-bottom: 50px;
+    }
+    .w3-animate-left {
+        font-family: 'Brandon Bold';
+        color: $color-white;
+        font-size: 66px;
+        padding-bottom: 80px;
+    }
+    &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+        background: rgba(0,0,0,.35);
+        z-index: 1;
+    }
+}
+
+//style development 
+
+.development {
+    padding: 50px 0;
+    .title-dev {
+        font-size: 60px;
+        padding: 0 40px 40px;
+        font-family: 'Brandon Light';
+    }
+    .text-dev {
+        padding: 0 40px 40px;
+        font-family: 'Brandon Light';
+        line-height: 1.4;
+        color: #777777;
+    }
+    .img-dev {
+        padding: 10px 40px 10px 70px;
+    }
+}
+.branding {
+    @extend .development;
+    background-color: $color-bg;
+}
+.clients {
+    padding: 50px 0;
+    .icon {
+        height: 100px;
+    }
+    .ico-cli {
+        padding: 0 15px;
+    }
+    .bd-icon {
+        width: 70px;
+        height: 70px;
+        float: left;
+        border: 1px solid $color-black;
+        border-radius: 50%;
+        background: $color-black;
+        margin-right: 20px;
+        position: relative;
+        color: $color-white;
+        .icon1 {
+            font-size: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &:hover {
+            background: $color-hover;
+            color: $color-black;
+            border: 1px solid $color-hover;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+    .title-skill {
+        font-family: 'Brandon Medium';
+        font-size: 22px;
+        padding-bottom: 10px;
+    }
+    .tit-skill {
+        color: $color-black;
+    }
+    .txt-clients {
+        font-family: 'Brandon Light';
+        font-size: 16px;
+        color: #777777;
+    }
+    .txt-skill {
+        width: 80%;
+        float: right;
+    }
+}
+.team {
+    padding: 50px 0 0;
+    text-align: center;
+    background: $color-bg;
+    .content-team {
+        margin-bottom: 60px;
+    }
+    .content-1 {
+        background: $color-white;
+        padding: 50px 0;
+    }
+    .txt-team {
+        padding-bottom: 50px;
+    }
+    .title-team {
+        font-size: 60px;
+        font-family: 'Brandon Light';
+    }
+    .text-team {
+        border: 1px solid $color-xam;
+        background: $color-white;
+        text-align: left;
+        margin: 30px;
+    }
+    .text {
+        margin: 40px 0;
+        font-family: 'Brandon Light';
+        font-size: 20px;
+        line-height: 1.4;
+        text-align: center;
+        padding: 0 70px;
+    }
+    .title-txt {
+        font-family: 'Brandon Light';
+        font-size: 22px;
+        color: #777777;
+    }
+    .text-1 {
+        padding-bottom: 15px;
+    }
+    .lg {
+        text-align: center;
+    }
+    .txt-lg {
+        display: inline-block;
+        padding: 0 22px;
+    }
+}
+.amazing {
+    padding: 50px 0;
+    text-align: center;
+    background: $color-black;
+    color: $color-white;
+    .txt-amazing {
+        padding-bottom: 50px;
+    }
+    .title-amazing {
+        font-size: 60px;
+        font-family: 'Brandon Light';
+    }
+    .image-amazing {
+        max-width: 100%;
+        padding-bottom: 20px;
+    }
+    .content-amazing {
+        margin-bottom: 45px;
+    }
+    .txt-title {
+        font-family: 'Brandon Light';
+        font-size: 22px;
+        color: #777777;
+    }
+    .title-content-amazing {
+        font-family: 'Brandon Bold';
+        font-size: 18px;
+        padding-bottom: 5px;
+    }
+    .txt-content-amazing {
+        font-family: 'Brandon Light';
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+    .icon {
+       padding-left: 120px;
+    }
+    .ico {
+        width: 45px;
+        height: 45px;
+        border: 1px solid $color-white;
+        float: left;
+        text-align: center;
+        position: relative;
+        border-radius: 50%;
+        cursor: pointer;
+        margin: 0 5px;
+        .icon-1 {
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $color-white;
+        }
+        &:hover {
+            border: 1px solid $color-hover;
+            .icon-1 {
+                color: $color-hover;
+            }
+        }
+    }
+    .txt {
+        font-family: 'Brandon Light';
+        font-size: 20px;
+    }
+}
+.contact {
+    background: $bg-contact;
+    padding: 50px 0;
+    color: $color-white;
+    .title-ct {
+        font-size: 60px;
+        padding-bottom: 15px;
+        font-family: 'Brandon Light';
+    }
+    .txt-title {
+        font-size: 16px;
+        font-family: 'Brandon Light';
+        padding-bottom: 50px;
+    }
+    .ico {
+        padding-bottom: 40px;
+        font-family: 'Brandon Light';
+        font-size: 18px;
+    }
+    .icon {
+        float: left;
+        padding-right: 15px;
+        font-size: 30px;
+    }
+    .form-group {
+        color: $color-black;
+        font-family: 'Brandon Medium';
+        font-size: 18px;
+        color: #bbbbbb;
+        .form-inp {
+            width: 100%;
+            margin-bottom: 30px;
+            height: 50px;
+            padding-left: 20px;
+            border-radius: 5px;
+        }
+        .form-area {
+            width: 100%;
+            padding: 20px;
+            border-radius: 5px;
+        }
+    }
+}
